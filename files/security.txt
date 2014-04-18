@@ -1,0 +1,28 @@
+GDB Flags
+-----------
+Disable stack cookies
+-fno-stack-protector
+
+Make stack executable
+-z execstack
+
+Align stack 2^2
+-mpreferred-stack-boundary=2
+
+Add gdb debugging symbols
+-ggdb
+
+
+Proc
+-----
+Turn off ASLR
+echo 0 > /proc/sys/kernel/randomize_va_space
+
+
+glibc
+-----
+Turn of some allocator checks
+MALLOC_CHECK_=0 ./badprogram
+
+
+
