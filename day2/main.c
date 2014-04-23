@@ -4,10 +4,11 @@ int asmfunction(void);
 
 int win(int a, int b)
 {
-    int a = 5;
-    int b = 6;
+    int c = 5;
+    int d = 6;
 
     printf("You win %d %d\n", a, b);
+    printf("You win %d %d\n", c, d);
     return 9;
 }
 
